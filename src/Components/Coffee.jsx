@@ -17,7 +17,7 @@ const Coffee = ({ item, coffee , setCoffee }) => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5001/coffee/${id}`, {
+        fetch(`https://coffee-store-server-protamim-protamims-projects.vercel.app/coffee/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

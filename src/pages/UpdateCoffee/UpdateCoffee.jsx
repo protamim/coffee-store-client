@@ -27,7 +27,7 @@ const UpdateCoffee = () => {
     };
     // console.log(coffeeInfo);
 
-    fetch(`http://localhost:5001/coffee/${_id}`, {
+    fetch(`https://coffee-store-server-protamim-protamims-projects.vercel.app/coffee/${_id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

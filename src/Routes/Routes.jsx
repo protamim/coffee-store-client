@@ -23,12 +23,12 @@ const Routes = createBrowserRouter([
             {
                 path: '/update/:id',
                 element: <UpdateCoffee />,
-                loader: ({params})=> fetch(`http://localhost:5001/coffee/${params.id}`)
+                loader: ({params})=> fetch(`https://coffee-store-server-protamim-protamims-projects.vercel.app/coffee/${params.id}`)
             },
             {
                 path: '/details/:id',
                 element: <CoffeeDetails />,
-                loader: ({params})=> fetch(`http://localhost:5001/coffee/${params.id}`)
+                loader: ({params})=> fetch(`https://coffee-store-server-protamim-protamims-projects.vercel.app/coffee/${params.id}`)
             }
         ]
     }

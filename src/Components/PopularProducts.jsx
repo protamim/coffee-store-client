@@ -7,7 +7,7 @@ const PopularProducts = () => {
   const [coffee, setCoffee] = useState([]);
 
   useEffect(()=> {
-    fetch('http://localhost:5001/coffee')
+    fetch('https://coffee-store-server-protamim-protamims-projects.vercel.app/coffee')
     .then(res => res.json())
     .then(data => {
       setCoffee(data);

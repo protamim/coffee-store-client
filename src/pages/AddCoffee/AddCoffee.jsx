@@ -19,7 +19,7 @@ const AddCoffee = () => {
         const coffeeInfo = {name, chef, supplier, taste, category, details, photo}
         console.log(coffeeInfo);
 
-        fetch('http://localhost:5001/addCoffee', {
+        fetch('https://coffee-store-server-protamim-protamims-projects.vercel.app/addCoffee', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
